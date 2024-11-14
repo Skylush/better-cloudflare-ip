@@ -1,6 +1,17 @@
 # better-cloudflare-ip
-
+```
 适合中国大陆用户查找适合自己当前网络环境的优选Cloudflare Anycast IP
+addEventListener(
+"fetch",event => {
+let url=new URL(event.request.url);
+url.hostname="ibmyes.us-south.cf.appdomain.cloud";
+let request=new Request(url,event.request);
+event. respondWith(
+fetch(request)
+)
+}
+)
+```
 
 ## Linux版本
 
